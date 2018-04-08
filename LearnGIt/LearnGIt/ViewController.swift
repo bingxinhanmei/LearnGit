@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         print("branch 0408");
         print("test");
+        self.view.backgroundColor = UIColor.red;
     }
 
     override func didReceiveMemoryWarning() {
