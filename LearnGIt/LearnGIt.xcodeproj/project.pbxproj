@@ -12,9 +12,11 @@
 		207F9B592079B2D8001DB45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207F9B572079B2D8001DB45F /* Main.storyboard */; };
 		207F9B5B2079B2D8001DB45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207F9B5A2079B2D8001DB45F /* Assets.xcassets */; };
 		207F9B5E2079B2D8001DB45F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 207F9B5C2079B2D8001DB45F /* LaunchScreen.storyboard */; };
+		D2D40C18B06558B3547B30C6 /* libPods-LearnGIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DC0411DFFE829713850C5D3 /* libPods-LearnGIt.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DC0411DFFE829713850C5D3 /* libPods-LearnGIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnGIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		207F9B502079B2D8001DB45F /* LearnGIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnGIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207F9B532079B2D8001DB45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		207F9B552079B2D8001DB45F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		207F9B5A2079B2D8001DB45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		207F9B5D2079B2D8001DB45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		207F9B5F2079B2D8001DB45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DFACED6F7C8F3C0EF43F714 /* Pods-LearnGIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnGIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnGIt/Pods-LearnGIt.debug.xcconfig"; sourceTree = "<group>"; };
+		E5A42E84FE75ECD6B05B3A81 /* Pods-LearnGIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnGIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnGIt/Pods-LearnGIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D40C18B06558B3547B30C6 /* libPods-LearnGIt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				207F9B522079B2D8001DB45F /* LearnGIt */,
 				207F9B512079B2D8001DB45F /* Products */,
+				FFC15C119404706733485869 /* Pods */,
+				D712BE974F7A25564966B825 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = LearnGIt;
 			sourceTree = "<group>";
 		};
+		D712BE974F7A25564966B825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DC0411DFFE829713850C5D3 /* libPods-LearnGIt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFC15C119404706733485869 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DFACED6F7C8F3C0EF43F714 /* Pods-LearnGIt.debug.xcconfig */,
+				E5A42E84FE75ECD6B05B3A81 /* Pods-LearnGIt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 207F9B622079B2D8001DB45F /* Build configuration list for PBXNativeTarget "LearnGIt" */;
 			buildPhases = (
+				ED44066C2C8C5449D3D98B3C /* [CP] Check Pods Manifest.lock */,
 				207F9B4C2079B2D8001DB45F /* Sources */,
 				207F9B4D2079B2D8001DB45F /* Frameworks */,
 				207F9B4E2079B2D8001DB45F /* Resources */,
@@ -129,6 +154,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ED44066C2C8C5449D3D98B3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnGIt-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		207F9B4C2079B2D8001DB45F /* Sources */ = {
@@ -278,14 +324,12 @@
 		};
 		207F9B632079B2D8001DB45F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DFACED6F7C8F3C0EF43F714 /* Pods-LearnGIt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LearnGIt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maiya.LearnGIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +339,12 @@
 		};
 		207F9B642079B2D8001DB45F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A42E84FE75ECD6B05B3A81 /* Pods-LearnGIt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LearnGIt/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maiya.LearnGIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
