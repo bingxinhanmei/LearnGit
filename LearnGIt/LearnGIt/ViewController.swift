@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         print("branch 0408");
         print("test");
         self.view.backgroundColor = UIColor.red;
+        self.view.backgroundColor = UIColor.green;
     }
 
     override func didReceiveMemoryWarning() {
